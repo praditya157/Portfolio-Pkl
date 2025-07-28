@@ -19,7 +19,12 @@ body {
     color: #ededed;
     background: #081b29;
 }
-
+body {
+  font-size: 16px;
+}
+.contact-list li {
+  font-size: 18px;
+}
 .circle-container {
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +198,10 @@ html {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .about-img img{
     padding-bottom: 20%;
@@ -808,6 +817,21 @@ section{
 
   .circular-bar {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .home-content {
+    padding: 70px 5%;
+    text-align: center;
+  }
+  .services, .about, .latest_project {
+    padding: 40px 5%;
   }
 }
 
