@@ -945,3 +945,32 @@ section{
     right: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .home-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    width: 90%;
+  }
+
+  .hero-section img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
