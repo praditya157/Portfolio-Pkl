@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio PKL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .animate-slide-in-left {
+        animation: slideInLeft 1s ease forwards;
+        animation-delay: 0.5s;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio PKL</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1"class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Skills</a> <!-- perbaiki 'Skill' menjadi 'Skills' -->
+            <a href="#latest_project" style="--i:4">Latest Project</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home"> <!-- perbaiki 'Home' menjadi 'home' -->
+        <div class="home-content">
+            <h1>Hallo, Saya</h1>
+            <h2 class="animate-slide-in-left">Muhammad Fajar Praditya</h2>
+            <h3><span class="text"></span></h3>
+            <br>
+            <p>Yang Sedang Melakukan PKL di BAPPERIDA (Badan Perencanaan Pembangunan, Riset, dan Inovasi Daerah)</p>
+            
+            <div class="home-sci">
+                <a href="https://www.instagram.com/jrzzskie?igsh=a3F1ejR2eTIxdjY=" target="_blank" rel="noopener">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://wa.me/+6281236308242" target="_blank">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+    </div>
+
+            <a href="#contact" class="btn-box">Lebih Banyak Tentang Saya</a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="alamak.jpeg" alt="Foto Saya">
+        </div>
+        <div class="about-text">
+            <h2>Tentang<span>Saya</span></h2>
+            <h4>Muhammad Fajar Praditya</h4>
+            <p>Saya seorang siswa kelas XII SMK Negeri 1 Pedan Jurusan PPLG dan berusia 17 tahun, yang sedang melaksanakan PKL di BAPPERIDA. Saya memiliki ketertarikan dalam pengembangan aplikasi web menggunakan HTML, CSS, JavaScript, PHP, dan Bootstrap.</p>
+            <a href="#contact" class="btn-box">Lebih Banyak Tentang Saya</a>
+        </div>
+    </section>
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">Layanan <span>Saya</span></h1>
+                <div class="services-list">                    
+    
+                    <div>
+                        <i class='bx bxl-visual-studio' style='color:#00eeff'></i>
+                        <h2>Frontend Dev</h2>
+                        <p>Saya menawarkan layanan pengembangan frontend yang berfokus pada pembuatan antarmuka pengguna yang menarik dan responsif. Dengan keahlian dalam HTML, CSS, dan JavaScript, saya berkomitmen untuk memastikan bahwa setiap proyek tidak hanya tampak hebat tetapi juga berfungsi dengan baik di berbagai perangkat dan browser.</p>
+                        <a href="#contact" class="read">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container1">
+            <h1 class="sub-title">Professional <span>Skills</span></h1>
+            <div class="radial-bars">
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                        <div class="percentage">60%</div>
+                        <div class="text">creativity</div>
+                </div>
+                <div class="radial-bar">
+    
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+        
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">Communication</div>
+                </div>            
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">60%</div>
+                    <div class="text">Problem Solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">10%</div>
+                    <div class="text">Team Work</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+        <br>
+        <br>
+        <br>
+        <div id="portfolio">
+            <div class="latest_project" id="latest_project">
+                <h1 class="sub-title">Latest <span>Project</span></h1>
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="biodata.png" alt="Tampilan proyek biodata">
+                    <div class="layer">
+                        <h5>Projek Biodata</h5>
+                        <p>Gambar ini adalah contoh web biodata pribadi saya, proyek web ini menggunakan HTML, CSS, JavaScript, dan PHP dengan database MySQL.</p>
+
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="monitoring_pegawai.png" alt="Tampilan proyek monitoring pegawai">
+                    <div class="layer">
+                        <h5>Projek Monitoring</h5>
+                        <p>Gambar ini adalah contoh proyek web untuk Sistem monitoring kehadiran dan kinerja pegawai dengan fitur real-time dashboard.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="tugas.png" alt="Tampilan proyek tugas">
+                    <div class="layer">
+                        <h5>Projek memanajemen tugas sekolah</h5>
+                        <p>Gambar ini adalah contoh Aplikasi web untuk mengelola tugas sekolah dengan fitur reminder dan tracking progress.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="pengaduan.png" alt="Tampilan proyek pengaduan">
+                    <div class="layer">
+                        <h5>Projek pengaduan</h5>
+                        <p>Sistem pengaduan masyarakat dengan fitur tracking status dan notifikasi.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/premium-photo/business-cards-templates-flyers-customizable-designs-professional-branding_1191871-29336.jpg?semt=ais_hybrid">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/gradient-dashboard-statistic-evolution-template_23-2148284171.jpg?ga=GA1.1.1056495612.1727086293">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+               
+            
+            </div>
+        </div>
+    </div>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h1 class="sub-title">Kontak <span>Saya</span></h1>
+            <p>Saya senang Anda telah mengunjungi situs web portofolio pribadi saya! Jika Anda memiliki pertanyaan, saran, atau ingin bekerja sama, jangan ragu untuk menghubungi saya melalui formulir ini. Saya akan berusaha membalas pesan Anda sesegera mungkin.</p>
+            <ul class="contact-list">
+                <li><i class="bx bxs-send"></i> fajarhafidfajar@gmail.com</li>
+                <li><i class="bx bxs-phone"></i> 081236308242</li>
+            </ul>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/jrzzskie?igsh=a3F1ejR2eTIxdjY="><i class="bx bxl-instagram"></i></a>
+                <a href="https://wa.me/+6281236308242"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@pajarbasikal?_t=ZS-8xhsDG9tMyF&_r=1"><i class="bx bxl-tiktok"></i></a>
+            </div>
+        </div>
+    
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            .contact-form {
+                position: relative;
+            }
+
+            /* Spinner (tombol loading) */
+            .spinner {
+                border: 3px solid #f3f3f3;
+                border-top: 3px solid #0ef;
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                animation: spin 0.8s linear infinite;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+
+            .animate-slide-in-left {
+            animation: slideInLeft 1s ease forwards;
+            animation-delay: 0s;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            /* Popup sukses */
+            .popup-success {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #041052;
+                color: rgb(30, 1, 252);
+                padding: 12px 18px;
+                border-radius: 8px;
+                font-weight: bold;
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-20px);
+                transition: all 0.4s ease;
+                z-index: 9999;
+            }
+
+            .popup-success.show {
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: auto;
+            }
+
+            .popup-error {
+                background: #e74c3c;
+            }
+</style>
+
+<div class="contact-form">
+  <form id="contactForm" action="https://formspree.io/f/movlebrl" method="POST">
+    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    <input type="text" name="subject" placeholder="Enter Your Subject">
+    <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
+    <button type="submit" class="send" id="submitBtn">Submit</button>
+  </form>
+</div>
+
+<div id="popup" class="popup-success"></div>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const popup = document.getElementById("popup");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (name.length < 3) return showPopup("❗ Nama minimal 3 huruf", true);
+    if (!email.includes("@") || !email.includes(".")) return showPopup("❗ Email tidak valid", true);
+    if (message.length < 5) return showPopup("❗ Pesan minimal 5 karakter", true);
+
+    // Tambah spinner
+    submitBtn.innerHTML = 'Sending <span class="spinner"></span>';
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
+
+      if (response.ok) {
+        showPopup("✅ Pesan berhasil dikirim!");
+        form.reset();
+      } else {
+        showPopup("❌ Terjadi kesalahan saat mengirim", true);
+      }
+    } catch (error) {
+      showPopup("❌ Gagal menghubungi server", true);
+    }
+
+    submitBtn.innerHTML = 'Submit'; // Kembalikan tombol
+  });
+
+  function showPopup(message, isError = false) {
+    popup.textContent = message;
+    popup.classList.toggle("popup-error", isError);
+    popup.classList.add("show");
+
+    setTimeout(() => {
+      popup.classList.remove("show", "popup-error");
+    }, 4000);
+  }
+</script>
+
+    </section>
+    <div class="last-text">
+        <p>© 2025 Fjr | Dibuat dengan semangat belajar</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    
+    
+    
+    
+        <script src="script.js"></script>
+        <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+        <script>
+            // Scroll smooth saat klik tombol panah ke atas
+            document.querySelector(".top").addEventListener("click", function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+                });
+            });
+            </script>
+
+        <script>
+            window.addEventListener("scroll", () => {
+                const topButton = document.querySelector(".top");
+                if (window.scrollY > 300) {
+                topButton.classList.add("show");
+                } else {
+                topButton.classList.remove("show");
+                }
+            });
+        </script>
+    </body>
+    </html>
